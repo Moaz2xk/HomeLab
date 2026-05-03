@@ -1,33 +1,27 @@
-# Proxmox Homelab — Hardware Recovery & Server Build
-
-## Overview
-This project started with a dead, liquid-damaged PC (Intel Pentium Gold G2020 - 2GB of ddr3 ram) 
-and ended with a fully functional production homelab. No off-the-shelf server — 
-everything was diagnosed, repaired, and fabricated by hand.
-
-## Hardware
-- Intel Pentium Gold G2020
-- Diagnosed and repaired liquid damage
-- Destroyed power system fully rewired
-- Kill switch added to power circuit
-- Custom control panel fabricated — indicator LEDs and switches mounted on drilled chassis
-
-## Software Stack
-- Proxmox VE — Type 1 hypervisor
-- pfSense VM — firewall and router with QoS bandwidth control per device using qband
-- TrueNAS — containerized NAS with ZFS storage
-- Administered entirely via SSH
-
-## What I learned
-- Hardware fault diagnosis on water-damaged boards
-- Power circuit design and rewiring
-- Proxmox VE setup and VM/container management
-- pfSense firewall rules and QoS configuration
-- TrueNAS ZFS pool setup and management
--  Linux server administration
-
-## Documentation
-- Build photos
-- Wiring diagrams
-- Control panel fabrication
-- Software configuration notes
+TrueNAS Home Server — Hardware Recovery & Build
+Overview
+This project started with a dead, liquid-damaged PC (Intel Pentium Gold G2020, 2GB DDR3) and ended with a functional home server running 24/7. Everything was diagnosed, repaired, and fabricated by hand. No off-the-shelf solution.
+Hardware
+Intel Pentium Gold G2020
+Diagnosed and repaired liquid damage
+Destroyed power system fully rewired
+Hardware kill switch added to power circuit
+Custom control panel fabricated — indicator LEDs and switches mounted on drilled chassis
+TP-Link POE adapter on top panel
+Colour-coded ethernet cables
+Software Stack
+TrueNAS — bare metal NAS OS with ZFS storage
+SMB shares — shared storage accessible from Windows, laptop, and mobile
+Jellyfin — self-hosted media server
+Tailscale — VPN for remote access
+What I Learned
+Hardware fault diagnosis on liquid-damaged boards
+Power circuit design and rewiring
+TrueNAS ZFS pool setup and management
+SMB network share configuration
+Self-hosted media server setup
+Remote access via Tailscale VPN
+Documentation
+Build photos
+Wiring diagrams
+Control panel fabrication notes
