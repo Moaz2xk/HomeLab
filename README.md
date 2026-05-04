@@ -45,4 +45,4 @@ Switched to TrueNAS bare metal when pfSense no longer met storage needs:
 ## Documentation
 - Build photos
 - Wiring diagrams
-- Control panel fabrication notes
+- Control panel fabrication note
